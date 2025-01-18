@@ -1,0 +1,407 @@
+img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,h2 {
+    font-family: 'suez one', Helvetica, sans-serif;
+    color: #ebdac2;
+}
+
+h3,h4,h5,h6,a,p,button {
+    font-family: 'poppins', Helvetica, sans-serif;
+    color: #ebdac2;
+}
+
+/* Hero Section */
+
+.hero-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.hero-section h2 {
+    position: absolute;
+    top: 3%;
+    left: 32.5%;
+    width: 35%;
+    text-align: center;
+    font-family: 'fredericka the great', serif;
+    text-shadow: 0px 3px 40px rgb(0, 0, 0);
+}  
+
+.hero-section h5 {
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    text-align: center;
+    text-shadow: 0px 3px 15px rgb(0, 0, 0);
+}
+
+.hero-section .hero-logo {
+    position: absolute;
+    bottom: 20%;
+    right: 10%;
+    width: 25%;
+}
+
+.hero-section div {
+    position: absolute;
+    left: 3%;
+    bottom: 10%;
+    width: 50%;
+    color: #ebdac2;
+    text-shadow: 0px 3px 10px rgb(0, 0, 0);
+}
+
+.hero-section div p{
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+
+.hero-section div h3 {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.hero-section .hero-background {
+    filter: brightness(0.95) contrast(90%);
+}
+
+/* Join the revolution Section */
+
+.revolution {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.revolution .revolution-image {
+    width: 60%;
+    position: relative;
+    background-size: cover;        /* Ensures the image covers the entire element */
+    background-position: center;   /* Centers the background image */
+    background-repeat: no-repeat;  /* Prevents the image from repeating */
+}
+
+.revolution .revolution-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./images/big steak slight zoom.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(0.7) contrast(90%);
+    z-index: -1; /* Ensures the pseudo-element stays behind the text */
+}
+
+
+.revolution .revolution-image h2 {
+    width: 60%;
+    position: absolute;
+    bottom: 25%;
+    left: 20%;
+    color: #fff;
+    text-align: center;
+    background-color: rgba(235, 218, 194, 0.5);
+    border-radius: 1rem;
+    text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.9);
+    font-size: 2rem;
+    font-family: "fredericka the great", serif;
+}
+.revolution .revolution-image h4 {
+    width: 75%;
+    position: absolute;
+    bottom: 10%;
+    left: 12.5%;
+    color: #ffffff;
+    text-align: center;
+    background-color: rgba(235, 218, 194, 0.5);
+    border-radius: 1rem;
+    text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.9);
+    font-size: 1rem;
+}
+
+
+.highlight {
+    color: #dbae5a;
+}
+
+.revolution .revolution-text {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 7%;
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0);
+    background-color: #e9ddcdcb;
+}
+
+.revolution .revolution-text h3 {
+    text-align: left;
+    width: 100%;
+    color: #191819be;
+}
+
+.revolution .revolution-text p {
+    text-align: justify;
+    color: #191819cc;
+}
+
+/* Join the club Section */
+
+.ill-join {
+    height: 25rem; /* Set a height for the element */
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden; /* Ensure no overflow */
+}
+
+.ill-join::before {
+    content: "";
+    position: absolute;
+    background-image: url('./images/Man zoomed.jpg');
+    background-size: cover; /* Cover the entire area */
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(0.7) contrast(90%);
+    z-index: -1;
+}
+
+.ill-join .join-the-club a {
+    text-decoration: none;
+}
+
+.ill-join .join-the-club {
+    position: absolute;
+    left: 5%;
+    top: 7%;
+    width: 30%;
+}
+
+
+.ill-join .join-the-club img {
+    width: 60%;
+    position: absolute;
+    top: 5%;
+    right: -200%;
+}
+
+.line-with-star {
+    display: flex;
+    align-items: center; /* Center align the star */
+    justify-content: center; /* Center align everything */
+}
+
+.line {
+    flex: 1; /* Take remaining space */
+    height: 0.125rem; /* Height of the line */
+    background-color: rgb(182, 179, 164); /* Solid line color */
+    margin: 0 0px; /* Space between line and star */
+}
+
+.line1 {
+    margin-right: 0.4rem;
+}
+.line2 {
+    margin-left: 0.4rem;
+}
+
+.star {
+    font-size: 1.5rem; /* Size of the star */
+    color: rgb(182, 179, 164); /* Color of the star */
+}
+
+
+.unapologetically-beef {
+    width: 100%;
+    background-color: #e9ddcd;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0.3rem 0rem 1.4rem;
+}
+
+.unapologetically-beef  img {
+    width: 15%;
+    align-self: center;
+    justify-self: center;
+}
+
+.unapologetically-beef  h3 {
+    width: 80%;
+    text-align: center;
+    color: #191819;
+    align-self: center;
+}
+
+/* Sign up Section */ 
+
+.sign-up {
+    width: 100%;
+    height: 40rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    filter: brightness(0.95);
+}
+
+.sign-up::before {
+    content: "";
+    position: absolute;
+    background-image: url('./images/big\ red\ meat\ chunk.jpg');
+    background-size: cover; /* Cover the entire area */
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(0.5) contrast(90%);
+    z-index: -1;
+}
+
+.sign-up h2 {
+    text-align: center;
+    border: solid 3px #fff;
+    height: 100%;
+    width: 100%;
+    font-size: 3rem;
+    color: #fff;
+    border-radius: 1rem;
+    background-color: #191819;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'fredericka the great', Helvetica, sans-serif;
+}
+
+.sign-up a {
+    align-self: center;
+    justify-self: center;
+    width: 40%;
+    height: 20%;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+/* Contact Us Section */
+
+/* Intro Section */
+.intro {
+    width: 100%;
+    height: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: brightness(0.95);
+}
+
+.intro img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    filter: sepia(40%) contrast(95%) saturate(90%) brightness(95%);
+}
+
+.intro .intro-container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 1rem;
+    background-image:
+    linear-gradient(to bottom, rgba(31, 31, 31, 0.699), rgba(3, 3, 3, 0.863)),
+    url('./images/beef\ club\ watermark\ backdrop.jpg');
+    height: 100%;
+}
+
+.intro div h2, .intro div p{
+    color: #ffffff;
+}
+
+.intro div img {
+    width: 70%;
+    height: auto;
+}
+
+.intro .intro-text {
+    margin-top: 8rem;
+}
+
+/* our deals section */
+
+.our-deals .our-deals-divider {
+    background-color: #fafafac4;
+    background-image: url('./images/square/beef\ club\ knife\ background.jpg');
+    background-size: cover;
+    filter: sepia(10%) contrast(90%) saturate(80%) brightness(95%);
+    background-position: center;
+    height: 7rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.our-deals .our-deals-divider img {
+    height: 7rem;
+    width: 20%;
+    margin: 0rem 2rem;
+}
+
+.our-deals .our-deals-divider h2 {
+    margin: 0rem 2rem;
+    color: #191819;
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'fredericka the great', Helvetica, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.our-deals .menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: #191819;
+    background-image:
+    linear-gradient(to bottom, rgba(31, 31, 31, 0.699), rgba(3, 3, 3, 0.863)),
+    url('./images/beef\ club\ watermark\ backdrop.jpg');
+}
+
+
+
+
+
