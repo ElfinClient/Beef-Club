@@ -247,7 +247,6 @@ h3,h4,h5,h6,a,p,button {
 
 .pack {
     padding: 1rem 2rem;
-    height: 22rem;
     border: solid 3px #77736b;
     border-radius: 1rem;
 }
@@ -271,7 +270,7 @@ h3,h4,h5,h6,a,p,button {
 }
 
 .pack-details {
-    padding: 0re 2rem 2rem 2rem;
+    padding: 1rem 2rem 2rem 2rem;
 }
 
 
