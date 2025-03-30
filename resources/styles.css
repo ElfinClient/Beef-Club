@@ -405,3 +405,144 @@ h3,h4,h5,h6,a,p,button {
 
 
 
+
+
+
+
+
+#short-about {
+    display: none;
+}
+#very-short-about {
+    display: none;
+}
+
+/* Media Statements */
+@media only screen and (max-width: 780px) {
+    * {
+        color: red !important;
+    }
+    #short-about {
+        display: block;
+    }
+    #long-about {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 695px) {
+    * {
+        color: green !important;
+    }
+    .revolution .revolution-text h3 {
+        font-size: 1.5rem;
+    }
+    .revolution .revolution-text p {
+        font-size: 1rem;
+    }
+    .revolution .revolution-image h2 {
+        font-size: 1.5rem;
+    }
+    .revolution .revolution-image h4 {
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    * {
+        color: orange !important;
+    }
+    .hero-section {
+        height: 100vh;
+        justify-content: center;
+        background-color: #191819;
+    }
+    .hero-background {
+        height: 100%;
+        object-fit: cover;
+    }
+    .hero-section .hero-logo {
+        width: 60%;
+        bottom: 0%;
+        right: -5%;
+    }
+    .hero-section h2 {
+        left: 5%;
+        width: 73%;
+        top: 7.5%;
+    }
+    #about-us-container {
+        bottom: 5.2%;
+        left: 6%;
+    }
+    #long-about {
+        display: none;
+    }
+    #short-about {
+        display: block;
+    }
+    #very-short-about {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    * {
+        color: yellow !important;
+    }
+    #about-us-container {
+        display: none;
+    }
+    .hero-section h2 {
+        left: 15%;
+        top: 10%;
+    }
+    .hero-section .hero-logo {
+        right: 20%;
+    }
+    .sign-up a {
+        width: 160%;
+    }
+
+    .revolution {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 60rem;
+    }
+    .revolution .revolution-text {
+        height: 50%;
+        width: 100%;
+    }
+    .revolution .revolution-image {
+        height: 50%;
+        width: 100%;
+    }
+
+    .revolution .revolution-image h2 {
+        padding: 1rem;
+        width: 90%;
+        left: 5%;
+        bottom: 50%;
+    }
+    .revolution .revolution-image h4 {
+        padding: 0.6rem;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    * {
+        color: green !important;
+    }
+    .hero-section .hero-logo {
+        width: 90%;
+        right: 5%;
+    }
+    .sign-up h2 {
+        font-size: 2rem;
+    }
+    .sign-up a {
+        height: 6rem;
+    }
+}
