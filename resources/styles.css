@@ -162,72 +162,6 @@ h3,h4,h5,h6,a,p,button {
     color: #191819cc;
 }
 
-/* Join the club Section */
-
-.ill-join {
-    height: 25rem; /* Set a height for the element */
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    overflow: hidden; /* Ensure no overflow */
-}
-
-.ill-join::before {
-    content: "";
-    position: absolute;
-    background-image: url('./images/Man zoomed.jpg');
-    background-size: cover; /* Cover the entire area */
-    width: 100%;
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    filter: brightness(0.7) contrast(90%);
-    z-index: -1;
-}
-
-.ill-join .join-the-club a {
-    text-decoration: none;
-}
-
-.ill-join .join-the-club {
-    position: absolute;
-    left: 5%;
-    top: 7%;
-    width: 30%;
-}
-
-
-.ill-join .join-the-club img {
-    width: 60%;
-    position: absolute;
-    top: 5%;
-    right: -200%;
-}
-
-.line-with-star {
-    display: flex;
-    align-items: center; /* Center align the star */
-    justify-content: center; /* Center align everything */
-}
-
-.line {
-    flex: 1; /* Take remaining space */
-    height: 0.125rem; /* Height of the line */
-    background-color: rgb(182, 179, 164); /* Solid line color */
-    margin: 0 0px; /* Space between line and star */
-}
-
-.line1 {
-    margin-right: 0.4rem;
-}
-.line2 {
-    margin-left: 0.4rem;
-}
-
-.star {
-    font-size: 1.5rem; /* Size of the star */
-    color: rgb(182, 179, 164); /* Color of the star */
-}
 
 
 .unapologetically-beef {
@@ -299,115 +233,54 @@ h3,h4,h5,h6,a,p,button {
     text-decoration: none;
 }
 
+/* PACKS SECTION */
 
-
-
-
-
-
-
-
-/* Contact Us Section */
-
-/* Intro Section */
-.intro {
+.packs {
     width: 100%;
-    height: 40rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    filter: brightness(0.95);
-}
-
-.intro img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    object-position: center;
-    filter: sepia(40%) contrast(95%) saturate(90%) brightness(95%);
-}
-
-.intro .intro-container {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: column;
-    padding: 1rem;
-    background-image:
-    linear-gradient(to bottom, rgba(31, 31, 31, 0.699), rgba(3, 3, 3, 0.863)),
-    url('./images/beef\ club\ watermark\ backdrop.jpg');
-    height: 100%;
-}
-
-.intro div h2, .intro div p{
-    color: #ffffff;
-}
-
-.intro div img {
-    width: 70%;
-    height: auto;
-}
-
-.intro .intro-text {
-    margin-top: 8rem;
-}
-
-/* our deals section */
-
-.our-deals .our-deals-divider {
-    background-color: #fafafac4;
-    background-image: url('./images/square/beef\ club\ knife\ background.jpg');
-    background-size: cover;
-    filter: sepia(10%) contrast(90%) saturate(80%) brightness(95%);
-    background-position: center;
-    height: 7rem;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
 }
 
-.our-deals .our-deals-divider img {
-    height: 7rem;
-    width: 20%;
-    margin: 0rem 2rem;
+.pack {
+    padding: 1rem 2rem;
+    height: 22rem;
+    border: solid 3px #77736b;
+    border-radius: 1rem;
 }
 
-.our-deals .our-deals-divider h2 {
-    margin: 0rem 2rem;
-    color: #191819;
-    text-align: center;
-    font-size: 3rem;
-    font-family: 'fredericka the great', Helvetica, sans-serif;
-    font-weight: 600;
-    font-style: normal;
+.pack h2 {
+    font-size: 2rem;
+    color: #635c4d;
+}
+.pack h3 {
+    color: #635c4d;
+    font-size: 1.3rem;
+}
+.pack h4 {
+    color: #635c4d;
+    font-size: 1.5rem;
+    text-align: right;
 }
 
-.our-deals .menu {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 1rem;
-    background-color: #191819;
-    background-image:
-    linear-gradient(to bottom, rgba(31, 31, 31, 0.699), rgba(3, 3, 3, 0.863)),
-    url('./images/beef\ club\ watermark\ backdrop.jpg');
+.packs h3 {
+    width: 100%;
+}
+
+.pack-details {
+    padding: 0re 2rem 2rem 2rem;
 }
 
 
 
 
 
-
-
-
+.revolution .revolution-image div {
+    display: none !important;
+}
 
 
 #short-about {
@@ -419,9 +292,6 @@ h3,h4,h5,h6,a,p,button {
 
 /* Media Statements */
 @media only screen and (max-width: 780px) {
-    * {
-        color: red !important;
-    }
     #short-about {
         display: block;
     }
@@ -431,9 +301,6 @@ h3,h4,h5,h6,a,p,button {
 }
 
 @media only screen and (max-width: 695px) {
-    * {
-        color: green !important;
-    }
     .revolution .revolution-text h3 {
         font-size: 1.5rem;
     }
@@ -449,9 +316,6 @@ h3,h4,h5,h6,a,p,button {
 }
 
 @media only screen and (max-width: 600px) {
-    * {
-        color: orange !important;
-    }
     .hero-section {
         height: 100vh;
         justify-content: center;
@@ -487,9 +351,6 @@ h3,h4,h5,h6,a,p,button {
 }
 
 @media only screen and (max-width: 520px) {
-    * {
-        color: yellow !important;
-    }
     #about-us-container {
         display: none;
     }
@@ -532,9 +393,6 @@ h3,h4,h5,h6,a,p,button {
 }
 
 @media only screen and (max-width: 300px) {
-    * {
-        color: green !important;
-    }
     .hero-section .hero-logo {
         width: 90%;
         right: 5%;
