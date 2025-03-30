@@ -195,6 +195,8 @@ h3,h4,h5,h6,a,p,button {
     justify-content: center;
     flex-direction: column;
     filter: brightness(0.95);
+
+    margin-top: 1.3rem;
 }
 
 .sign-up::before {
