@@ -312,6 +312,12 @@ h3,h4,h5,h6,a,p,button {
     .revolution .revolution-image h4 {
         font-size: 0.9rem;
     }
+
+    .packs {
+        flex-direction: column;
+    }
+
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -350,6 +356,7 @@ h3,h4,h5,h6,a,p,button {
 }
 
 @media only screen and (max-width: 520px) {
+
     #about-us-container {
         display: none;
     }
@@ -388,6 +395,10 @@ h3,h4,h5,h6,a,p,button {
     }
     .revolution .revolution-image h4 {
         padding: 0.6rem;
+    }
+
+    .pack-details {
+        padding: 0rem;
     }
 }
 
