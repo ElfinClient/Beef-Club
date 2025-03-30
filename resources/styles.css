@@ -400,6 +400,9 @@ h3,h4,h5,h6,a,p,button {
     .pack-details {
         padding: 0rem;
     }
+    .pack-details h3{
+        padding: 1rem;
+    }
 }
 
 @media only screen and (max-width: 300px) {
