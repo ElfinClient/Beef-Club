@@ -282,7 +282,9 @@ h3,h4,h5,h6,a,p,button {
 
 
 
-
+.hardtoread {
+    color: #8a8379;
+}
 
 .revolution .revolution-image div {
     display: none !important;
@@ -412,6 +414,12 @@ h3,h4,h5,h6,a,p,button {
     }
 }
 
+@media only screen and (max-width : 400px) {
+    .revolution .revolution-text {
+        height: 39rem;
+    }
+}
+
 @media only screen and (max-width: 300px) {
     .hero-section .hero-logo {
         width: 90%;
@@ -422,5 +430,12 @@ h3,h4,h5,h6,a,p,button {
     }
     .sign-up a {
         height: 6rem;
+    }
+
+    .revolution .revolution-text p {
+        font-size: 0.9rem;
+    }
+    .revolution .revolution-text h3 {
+        font-size: 1.3rem;
     }
 }
