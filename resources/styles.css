@@ -240,9 +240,9 @@ h3,h4,h5,h6,a,p,button {
 .packs {
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
     padding: 2rem;
     gap: 2rem;
 }
@@ -255,6 +255,7 @@ h3,h4,h5,h6,a,p,button {
     padding: 1rem 2rem;
     border: solid 3px #77736b;
     border-radius: 1rem;
+    width: 80%;
 }
 
 .pack h2 {
@@ -298,6 +299,41 @@ h3,h4,h5,h6,a,p,button {
     display: none;
 }
 
+
+/* FRESH NOT FROZEN SECTION */
+
+#freshnotfrozen {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#freshnotfrozen div {
+    border-top: #191819 solid 1px;
+    border-bottom: #191819 solid 1px;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 3rem;
+}
+
+#freshnotfrozen div img {
+    width: 15%;
+}
+
+#freshnotfrozen div h3 {
+    color: #191819;
+    font-size: 3rem;
+    text-align: center;
+}
+
+
+
+
+
+
 /* Media Statements */
 @media only screen and (max-width: 780px) {
     #short-about {
@@ -306,9 +342,13 @@ h3,h4,h5,h6,a,p,button {
     #long-about {
         display: none;
     }
+    #freshnotfrozen div h3 {
+        font-size: 2rem;
+    }
 }
 
 @media only screen and (max-width: 695px) {
+
     .revolution .revolution-text h3 {
         font-size: 1.5rem;
     }
@@ -330,6 +370,7 @@ h3,h4,h5,h6,a,p,button {
 }
 
 @media only screen and (max-width: 600px) {
+
     .hero-section {
         height: 100vh;
         justify-content: center;
@@ -362,10 +403,13 @@ h3,h4,h5,h6,a,p,button {
     #very-short-about {
         display: none;
     }
+
+    #freshnotfrozen div h3 {
+        font-size: 1.5rem;
+    }
 }
 
 @media only screen and (max-width: 520px) {
-
     #about-us-container {
         display: none;
     }
@@ -412,15 +456,32 @@ h3,h4,h5,h6,a,p,button {
     .pack-details h3{
         padding: 1rem;
     }
+
+    #freshnotfrozen div img {
+        width: 30%;
+    }
+    #freshnotfrozen div {
+        gap: 1rem;
+    }
 }
 
 @media only screen and (max-width : 400px) {
+    .pack-details .pack h2 {
+        font-size: 1.5rem;
+    }
     .revolution .revolution-text {
         height: 39rem;
+    }
+    #freshnotfrozen div img {
+        width: 40%;
     }
 }
 
 @media only screen and (max-width: 300px) {
+
+    .pack-details .pack div p {
+        font-size: 0.8rem;
+    }
     .hero-section .hero-logo {
         width: 90%;
         right: 5%;
@@ -437,5 +498,15 @@ h3,h4,h5,h6,a,p,button {
     }
     .revolution .revolution-text h3 {
         font-size: 1.3rem;
+    }
+    #freshnotfrozen div img {
+        width: 40%;
+    }
+    #freshnotfrozen div {
+        gap: 2rem;
+        padding: 2rem 1rem;
+    }
+    #freshnotfrozen div h3 {
+        font-size: 1rem;
     }
 }
