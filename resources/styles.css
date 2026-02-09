@@ -413,6 +413,33 @@ h3,h4,h5,h6,a,p,button {
     #freshnotfrozen div h3 {
         font-size: 1.5rem;
     }
+        .revolution {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 60rem;
+    }
+
+    .revolution .revolution-image {
+        height: 50%;
+        width: 100%;
+    }
+
+    .revolution .revolution-image h2 {
+        padding: 1rem;
+        width: 90%;
+        left: 5%;
+        bottom: 50%;
+    }
+    .revolution .revolution-image h4 {
+        padding: 0.6rem;
+    }
+    .revolution .revolution-text {
+        height: 100%;
+        width: 100%;
+        justify-content: space-evenly;
+    }
 }
 
 @media only screen and (max-width: 520px) {
@@ -429,33 +456,6 @@ h3,h4,h5,h6,a,p,button {
     .sign-up a {
         width: 160%;
     }
-
-    .revolution {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 60rem;
-    }
-    .revolution .revolution-text {
-        height: 50%;
-        width: 100%;
-    }
-    .revolution .revolution-image {
-        height: 50%;
-        width: 100%;
-    }
-
-    .revolution .revolution-image h2 {
-        padding: 1rem;
-        width: 90%;
-        left: 5%;
-        bottom: 50%;
-    }
-    .revolution .revolution-image h4 {
-        padding: 0.6rem;
-    }
-
     .pack-details {
         padding: 0rem;
     }
@@ -476,7 +476,7 @@ h3,h4,h5,h6,a,p,button {
         font-size: 1.5rem;
     }
     .revolution .revolution-text {
-        height: 39rem;
+        height: 85rem;
     }
     #freshnotfrozen div img {
         width: 40%;
@@ -498,9 +498,11 @@ h3,h4,h5,h6,a,p,button {
     .sign-up a {
         height: 6rem;
     }
-
+    .revolution .revolution-text {
+        height: 93rem;
+    }
     .revolution .revolution-text p {
-        font-size: 0.9rem;
+        font-size: 0.95rem;
     }
     .revolution .revolution-text h3 {
         font-size: 1.3rem;
@@ -514,5 +516,15 @@ h3,h4,h5,h6,a,p,button {
     }
     #freshnotfrozen div h3 {
         font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 270px) {
+    .revolution .revolution-text {
+        height: 98rem;
+    }
+    .revolution .revolution-text p {
+        font-size: 0.9rem;
+        overflow: hidden;
     }
 }
